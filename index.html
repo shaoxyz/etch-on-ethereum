@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>在区块链上写点东西</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <!-- <link rel="stylesheet" href="static/index.css"> -->
+    <style>
+      h1{
+        color:#2f2f2f
+      }
+      h4{
+        color:#2f2f2f
+      }
+      sub{
+        color:#2f2f2f
+      }
+      .top{
+        margin: 30px
+      }
+      .btn {
+        margin: 30px
+      }
+      span {
+        color: #777777
+      }
+      #tips{
+        color: #b3b3b3
+      }
+    </style>
+  </head>
+
+  <body>
+    <div align="center" >
+    <div class="top">
+      <img src="static/ethereum.png" width="120px" height="120px" alt="Logo">
+      <h1>在区块链上写点东西</h1>
+      <p>Etch on Ethereum</p>
+      <p id="tips">不可修改 | 不可删除 | 安全的时间线</p>
+    </div>
+    <hr></br>
+    <form id="inputForm" >
+      <h4>写点什么？</h4>
+      <textarea class="form-control" id="inputData" placeholder="我胖虎绝不向小叮当低头！" required="required" overflow="auto"; style="width: 60%; height:400px"></textarea>
+      <input class="btn btn-primary btn-lg" title="通过MetaMask支付" type="submit" value=" 好了 "/>
+      <input class="btn btn-primary btn-lg" title="清空内容" type="reset" value=" 重置 " />
+    </form>
+    <div id="alert-broad">
+
+    </div>
+    <hr>
+    </div>
+    <div class="alert alert-primary" role="alert">
+      正在使用：<span id="net"></span>
+    </div>
+  </body>
+</html>
